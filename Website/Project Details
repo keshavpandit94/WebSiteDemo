@@ -1,0 +1,236 @@
+My Second HTML & CSS Project: Building a Basic Website
+Introduction
+After successfully creating a card in my first project, I decided to take on a bigger challenge—building a basic website! 🚀 This project helped me dive deeper into HTML and CSS, as I learned how to structure a multi-page website and style it with CSS. I’m excited to share the details of this project in this README.
+
+Project Overview
+The goal of this project was to create a simple, multi-page website that includes:
+
+Home Page: An introductory page with a navigation menu and a welcoming section.
+About Page: A page describing the purpose of the website or more information about myself.
+Contact Page: A page with a contact form for visitors to get in touch.
+Learning Goals
+My learning objectives for this project were:
+
+Create a Multi-Page Structure: Understanding how to link multiple pages together using HTML.
+Advanced CSS Styling: Experimenting with more complex CSS properties, such as flexbox and grid.
+Responsive Web Design: Ensuring the website is accessible and looks good on various devices.
+Navigation and Layouts: Creating a consistent navigation menu and layout for all pages.
+Project Details
+HTML Structure
+The basic structure for each page of the website is as follows:
+
+index.html (Home Page)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="welcome-section">
+    <h1>Welcome to My Website</h1>
+    <p>This is the home page of my website.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</body>
+</html>
+about.html (About Page)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h1>About Me</h1>
+    <p>This page contains information about myself.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</body>
+</html>
+contact.html (Contact Page)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <form action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</body>
+</html>
+CSS Styling
+The following CSS file (styles.css) is used to style the entire website:
+
+css
+Copy code
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 10px;
+  }
+}
+Responsive Design
+The website is designed to be fully responsive, ensuring it looks great on both desktop and mobile devices. The CSS media query above helps adjust the layout for smaller screens, making the navigation menu stack vertically and the sections adjust their margin.
+
+Challenges & Learnings
+In this project, I faced and overcame several challenges:
+
+Creating a Navigation Menu: Designing a consistent and functional navigation menu across all pages.
+Form Styling: Learning how to style form elements effectively and ensure they are user-friendly.
+Responsive Design: Making the website responsive across different devices, especially handling the navigation menu on mobile.
+What's Next?
+Next, I plan to:
+
+Add More Pages: Expand the website by adding more pages and content.
+Explore JavaScript: Start incorporating JavaScript to add interactivity to the website.
+Improve Design Skills: Learn more about design principles to create more aesthetically pleasing layouts.
+Conclusion
+This project was a significant step forward in my journey to learn web development. By creating a basic website, I gained confidence in using HTML and CSS and built a solid foundation to continue my learning. I'm excited to explore more advanced topics and share my progress!
+
+Feel free to check out the code and share any feedback. Thank you for following my learning journey! 😊
