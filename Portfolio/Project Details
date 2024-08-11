@@ -1,0 +1,18 @@
+Project Title: Portfolio Website
+Project Description:
+For my third project, I built a responsive portfolio website using HTML and CSS. The goal was to create a clean and professional online presence where I can showcase my skills, projects, and experience. The website is fully responsive, ensuring it looks great on desktops, tablets, and mobile devices.
+
+Key Features:
+Responsive Design: The layout adjusts seamlessly across various screen sizes.
+Custom CSS Styling: Handcrafted styles to ensure a unique and polished look.
+Navigation Bar: A fixed navigation bar with smooth scrolling links.
+Project Showcase: A dedicated section highlighting my key projects with images and descriptions.
+About Me Section: A brief introduction with information about my skills, experience, and contact details.
+Contact Form: A functional contact form that allows visitors to send me messages directly from the site.
+
+
+Technologies Used:
+HTML5: For the structure of the website.
+CSS3: For styling and layout.
+Flexbox & Grid: To create a responsive and organized layout.
+Media Queries: To ensure the site is mobile-friendly.
